@@ -43,6 +43,10 @@
         .tab-content>.active {
             display: block;
         }
+
+        input[type="time"] {
+            width: 100px;
+        }
     </style>
 </head>
 
@@ -61,8 +65,10 @@
         <div class="tab-pane active" id="timer">
             <h3>Таймер</h3>
 
-            <button>Старт</button>
-            <button>Стоп</button>
+            <input type="time" id="time-input" name="time-input" value="00:00" required> <br><br>
+
+            <button class="timer-start">Старт</button>
+            <button class="timer-stop">Стоп</button>
         </div>
         <div class="tab-pane" id="datecalc">
             <form id="datecalc">
