@@ -5,49 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datetime superapp</title>
-    <script src="./src/main.js" type="module"></script>
-
-    <style>
-        .nav-tabs {
-            display: flex;
-            padding-top: 0;
-            margin: 0;
-            list-style: none;
-            border-bottom: 1px solid #dee2e6;
-        }
-
-        .nav-item {
-            border: 1px solid transparent;
-            border-top-left-radius: .25rem;
-            border-top-right-radius: .25rem;
-            padding: .5rem 1rem;
-            color: #0d6efd;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .nav-item.active {
-            color: #495057;
-            background-color: #fff;
-            border-color: #dee2e6 #dee2e6 #fff;
-        }
-
-        .tab-content {
-            padding: 50px;
-        }
-
-        .tab-content>.tab-pane {
-            display: none;
-        }
-
-        .tab-content>.active {
-            display: block;
-        }
-
-        input[type="time"] {
-            width: 100px;
-        }
-    </style>
 </head>
 
 <body>
@@ -63,7 +20,7 @@
 
     <div class="tab-content">
         <div class="tab-pane active" id="timer">
-            <h3>Таймер</h3>
+            <h3>Таймер <img class="timer-img" src="./src/assets/timer.png" alt=""></h3>
 
             <input type="time" id="time-input" name="time-input" value="00:00" required> <br><br>
 

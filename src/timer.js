@@ -1,8 +1,9 @@
-import "./howler.js";
+import { Howl } from 'howler';
+import soundAudio from '../src/assets/sound.mp3';
 
 const timerInput = document.getElementById('time-input');
 const sound = new Howl({
-    src: ['../src/sound.mp3']
+    src: [soundAudio]
 });
 
 

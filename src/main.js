@@ -1,3 +1,5 @@
+import './styles/main.scss';
+
 import { diffDates, diffToHtml } from "./datecalc.js";
 import { formatError } from "./utils.js";
 import changeTab from "./tabs.js";
