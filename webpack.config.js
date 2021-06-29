@@ -7,9 +7,9 @@ module.exports = {
     mode: 'development',
     entry: path.resolve(__dirname, 'src', 'main.js'),
     output: {
-        filename: 'main.bundle.js'
+        filename: 'main.bundle.js',
     },
-
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -40,7 +40,6 @@ module.exports = {
             }
         ]
     },
-
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'index.html')
